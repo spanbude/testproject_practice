@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="rerty_Logic.MyTransformerListner"/>
+    <listener class-name="utility.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testExample.Search_CustomerTest">
+        <methods>
+          <include name="closeApp"/>
+          <include name="lanunchApp"/>
+          <include name="search_cust"/>
+        </methods>
+      </class> <!-- testExample.Search_CustomerTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
